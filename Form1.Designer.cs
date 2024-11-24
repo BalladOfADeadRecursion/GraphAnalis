@@ -1,6 +1,6 @@
 ﻿namespace GraphAnalis
 {
-    partial class Form1
+    partial class GraphAnalis
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,18 +28,95 @@
         /// </summary>
         private void InitializeComponent()
         {
+            richTextBox1 = new RichTextBox();
+            richTextBox2 = new RichTextBox();
+            button1 = new Button();
+            button2 = new Button();
+            label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
-            // Form1
+            // richTextBox1
+            // 
+            richTextBox1.Location = new Point(12, 43);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(378, 40);
+            richTextBox1.TabIndex = 0;
+            richTextBox1.Text = "";
+            // 
+            // richTextBox2
+            // 
+            richTextBox2.Location = new Point(12, 104);
+            richTextBox2.Name = "richTextBox2";
+            richTextBox2.Size = new Size(493, 441);
+            richTextBox2.TabIndex = 1;
+            richTextBox2.Text = "";
+            // 
+            // button1
+            // 
+            button1.Location = new Point(396, 43);
+            button1.Name = "button1";
+            button1.Size = new Size(109, 23);
+            button1.TabIndex = 2;
+            button1.Text = "Select";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(199, 551);
+            button2.Name = "button2";
+            button2.Size = new Size(109, 23);
+            button2.TabIndex = 3;
+            button2.Text = "Analis";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.ForeColor = SystemColors.ButtonFace;
+            label1.Location = new Point(12, 25);
+            label1.Name = "label1";
+            label1.Size = new Size(92, 15);
+            label1.TabIndex = 4;
+            label1.Text = "Select graph .txt";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.ForeColor = SystemColors.ButtonFace;
+            label2.Location = new Point(12, 86);
+            label2.Name = "label2";
+            label2.Size = new Size(100, 15);
+            label2.TabIndex = 5;
+            label2.Text = "Analis your graph";
+            // 
+            // GraphAnalis
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlDarkDark;
             ClientSize = new Size(517, 592);
-            Name = "Form1";
-            Text = "Form1";
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(richTextBox2);
+            Controls.Add(richTextBox1);
+            Name = "GraphAnalis";
+            Text = "GraphAnalis";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private RichTextBox richTextBox1;
+        private RichTextBox richTextBox2;
+        private Button button1;
+        private Button button2;
+        private Label label1;
+        private Label label2;
     }
 }
