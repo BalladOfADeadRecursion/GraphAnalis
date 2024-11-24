@@ -74,7 +74,7 @@ namespace GraphAnalis
             }
 
             // Вывод результатов
-            richTextBox2.AppendText("\n");
+            richTextBox2.AppendText("\n\n");
             foreach (string bridge in bridges)
             {
                 richTextBox2.AppendText(bridge + "\n");
@@ -138,5 +138,10 @@ namespace GraphAnalis
             }
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text = "";
+            richTextBox2.Text = "";
+        }
     }
 }

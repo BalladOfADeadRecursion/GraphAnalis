@@ -34,6 +34,7 @@
             button2 = new Button();
             label1 = new Label();
             label2 = new Label();
+            button3 = new Button();
             SuspendLayout();
             // 
             // richTextBox1
@@ -64,7 +65,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(199, 551);
+            button2.Location = new Point(86, 551);
             button2.Name = "button2";
             button2.Size = new Size(109, 23);
             button2.TabIndex = 3;
@@ -92,12 +93,23 @@
             label2.TabIndex = 5;
             label2.Text = "Analis your graph";
             // 
+            // button3
+            // 
+            button3.Location = new Point(314, 551);
+            button3.Name = "button3";
+            button3.Size = new Size(109, 23);
+            button3.TabIndex = 6;
+            button3.Text = "Clear";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // GraphAnalis
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDarkDark;
             ClientSize = new Size(517, 592);
+            Controls.Add(button3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button2);
@@ -118,5 +130,6 @@
         private Button button2;
         private Label label1;
         private Label label2;
+        private Button button3;
     }
 }
